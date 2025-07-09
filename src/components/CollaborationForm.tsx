@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Building, FileText, Mail, Phone, User, X } from 'lucide-react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface CollaborationFormProps {
   isOpen: boolean;
@@ -29,7 +29,7 @@ const CollaborationForm: React.FC<CollaborationFormProps> = ({
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/collaborate', {
+      const response = await fetch('/api/collaborate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
