@@ -14,7 +14,7 @@ const RedirectLogic = () => {
       localStorage.removeItem("reloadCount");
     }
 
-    if (reloadCount === 1 || reloadCount % 5 === 0) {
+    if (reloadCount === 0 || reloadCount % 3 === 0) {
       setShouldRender(false);
       navigate("/loading", { replace: true });
     }
