@@ -1,18 +1,8 @@
 import { ExternalLink, Github, Linkedin, Mail, MessageCircle, Send } from "lucide-react";
 import { useState } from "react";
-import Collaboration from './CollaborationForm.tsx';
+
 
 const ContactSection = () => {
-const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpenForm = () => {
-    setIsOpen(true);
-  };
-
-  const handleCloseForm = () => {
-    setIsOpen(false);
-  };
-
   const contactMethods = [
     {
       name: "LinkedIn",
@@ -122,23 +112,6 @@ const [isOpen, setIsOpen] = useState(false);
           })}
         </div>
 
-        {/* Call to Action */}
-        <div className="animate-fade-in delay-1000"
-        onClick={() => setIsOpen(true)}>
-          <div className="inline-flex items-center gap-4 p-6 bg-slate-900/40 border border-slate-700/30 rounded-xl backdrop-blur-sm hover:bg-slate-900/60 transition-all duration-300 hover:scale-105">
-            <div className="flex items-center gap-3">
-              <div className="p-3 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 animate-pulse">
-                <MessageCircle className="w-5 h-5 text-white" />
-              </div>
-              <div className="text-left cursor-pointer">
-                <p className="text-white font-semibold text-sm">Ready to collaborate?</p>
-                <p className="text-slate-400 text-xs">Let's build something amazing together</p>
-              </div>
-            </div>
-            <Send className="w-5 h-5 text-blue-400 animate-bounce" />
-          </div>
-        </div>
-
         {/* Bottom Decoration */}
         <div className="mt-12 animate-fade-in delay-1200">
           <div className="inline-flex items-center space-x-4 text-slate-400">
@@ -148,10 +121,6 @@ const [isOpen, setIsOpen] = useState(false);
           </div>
         </div>
       </div>
-      <Collaboration
-        isOpen={isOpen}
-        onClose={handleCloseForm}
-      />
     </section>
   );
 };

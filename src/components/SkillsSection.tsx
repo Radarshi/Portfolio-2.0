@@ -24,9 +24,9 @@ const SkillsSection = () => {
       color: "from-orange-500 to-red-600"
     },
     {
-      title: "Development Tools",
-      skills: ["Git", "GitHub", "VS Code", "NPM", "Webpack", "Vite"],
-      color: "from-pink-500 to-rose-600"
+      title: "Machine Learning & Deep Learning",
+      skills: ["Python", "NumPy", "Pandas", "Scikit-learn", "PyTorch", "TensorFlow", "NLP", "Model Training"],
+      color: "from-indigo-500 to-purple-600"
     },
     {
       title: "Core Concepts",

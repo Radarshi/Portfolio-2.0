@@ -13,6 +13,24 @@ const ProjectsSection = () => {
       github : "https://github.com/Radarshi/MoJo",
       preview : "https://mo-jo-my-music-app.vercel.app/"
     },
+    {
+    name: "MediPlus: Medical E-commerce",
+    description: "Designed and implemented a scalable full-stack medical e-commerce platform with secure RESTful APIs for managing users, consultations, and pharmacy inventory.",
+    tech: ["React (TypeScript, JavaScript)", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
+    gradient: "from-green-500 to-teal-600",
+    status: "E-Commerce platform",
+    github : "https://github.com/Radarshi/MediPlus-Frontend",
+    preview : "https://medi-plus-ten.vercel.app/"
+  },
+  {
+    name: "Federated Learning - Privacy-Preserving Legal Document Classification",
+    description: "Built a federated learning framework enabling institutions to collaboratively train models without sharing sensitive data, improving classification robustness and achieving 88% accuracy.",
+    tech: ["Python", "PyTorch", "Scikit-learn", "NLP", "Federated Learning"],
+    gradient: "from-orange-500 to-red-600",
+    status: "Research Project",
+    github : "",
+    preview : ""
+  }
   ];
 
   return (
@@ -58,49 +76,65 @@ const ProjectsSection = () => {
                 </Badge>
               </div>
 
-              <CardContent className="p-6 sm:p-8 relative z-10">
-                {/* Project Header */}
-                <div className="mb-6">
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 group-hover:bg-clip-text transition-all duration-300">
-                    {project.name}
-                  </h3>
-                  <div className={`w-12 h-1 bg-gradient-to-r ${project.gradient} group-hover:w-full transition-all duration-500 rounded-full`}></div>
-                </div>
+              <CardContent className="p-6 sm:p-8 h-full flex flex-col justify-between relative z-10">
+  
+  {/* Top Section */}
+  <div>
+    {/* Project Header */}
+    <div className="mb-5">
+      <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 group-hover:bg-clip-text transition-all duration-300">
+        {project.name}
+      </h3>
+      <div className={`w-10 h-[3px] bg-gradient-to-r ${project.gradient} group-hover:w-20 transition-all duration-500 rounded-full`} />
+    </div>
 
-                {/* Project Description */}
-                <p className="text-slate-300 text-sm sm:text-base mb-6 leading-relaxed group-hover:text-slate-200 transition-colors duration-300 line-clamp-3">
-                  {project.description}
-                </p>
+    {/* Project Description */}
+    <p className="text-slate-300 text-sm sm:text-[15px] leading-relaxed mb-5 line-clamp-3 group-hover:text-slate-200 transition-colors duration-300">
+      {project.description}
+    </p>
 
-                {/* Tech Stack */}
-                <div className="flex flex-wrap gap-2.5 mb-6">
-                  {project.tech.map((tech, techIndex) => (
-                    <Badge
-                      key={techIndex}
-                      variant="outline"
-                      className="border-slate-600/50 bg-slate-800/50 text-slate-300 text-xs hover:border-slate-500 hover:bg-slate-700/70 hover:text-white transition-all duration-300 hover:scale-110 font-medium backdrop-blur-sm"
-                      style={{
-                        animationDelay: `${(index * 200) + (techIndex * 100)}ms`,
-                        animationFillMode: 'both'
-                      }}
-                    >
-                      {tech}
-                    </Badge>
-                  ))}
-                </div>
+    {/* Tech Stack */}
+    <div className="flex flex-wrap gap-2 mb-4">
+      {project.tech.map((tech, techIndex) => (
+        <Badge
+          key={techIndex}
+          variant="outline"
+          className="border-slate-600/40 bg-slate-800/40 text-slate-300 text-[11px] px-2.5 py-1 rounded-md hover:border-slate-500 hover:bg-slate-700/60 hover:text-white transition-all duration-300"
+          style={{
+            animationDelay: `${(index * 200) + (techIndex * 100)}ms`,
+            animationFillMode: 'both'
+          }}
+        >
+          {tech}
+        </Badge>
+      ))}
+    </div>
+  </div>
 
-                {/* Action Buttons */}
-                <div className="flex gap-3 pt-4 border-t border-slate-700/50">
-                  <a href={project.github} target="_blank"><button className="flex items-center gap-2 px-4 py-2 bg-slate-800/60 hover:bg-slate-700/80 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-105 text-sm font-medium border border-slate-600/30 hover:border-slate-500/50">
-                    <Github className="w-4 h-4" />
-                    <span>Code</span>
-                  </button></a>
-                  <a href={project.preview} target="_blank"><button className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.gradient} text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm font-medium opacity-90 hover:opacity-100`}>
-                    <ExternalLink className="w-4 h-4" />
-                    <span>Preview</span>
-                  </button></a>
-                </div>
-              </CardContent>
+  {/* Bottom Section (Buttons always aligned) */}
+  <div className="flex gap-3 pt-4 mt-4 border-t border-slate-700/50">
+    
+    {project.github && (
+      <a href={project.github} target="_blank" rel="noopener noreferrer">
+        <button className="flex items-center gap-2 px-4 py-2 bg-slate-800/60 hover:bg-slate-700/80 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-105 text-sm font-medium border border-slate-600/30 hover:border-slate-500/50">
+          <Github className="w-4 h-4" />
+          <span>Code</span>
+        </button>
+      </a>
+    )}
+
+    {project.preview && (
+      <a href={project.preview} target="_blank" rel="noopener noreferrer">
+        <button className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.gradient} text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm font-medium opacity-90 hover:opacity-100`}>
+          <ExternalLink className="w-4 h-4" />
+          <span>Preview</span>
+        </button>
+      </a>
+    )}
+
+  </div>
+
+</CardContent>
 
               {/* Hover Glow Effect */}
               <div className={`absolute inset-0 rounded-lg bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}></div>

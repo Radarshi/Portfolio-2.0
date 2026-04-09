@@ -5,19 +5,19 @@ import { Award, Calendar, GraduationCap } from "lucide-react";
 const EducationSection = () => {
   const education = [
     {
-      school: "North Point Senior Secondary Boarding School",
-      degree: "Higher Secondary, Science",
-      period: "Jun 2022",
-      grade: "82%",
-      gradient: "from-blue-500 to-purple-600",
-      status : "Completed"
-    },
-    {
       school: "Devaki Memorial School",
       degree: "Secondary, Science",
       period: "May 2020",
       grade: "80%",
       gradient: "from-purple-500 to-pink-600",
+      status : "Completed"
+    },
+    {
+      school: "North Point Senior Secondary Boarding School",
+      degree: "Higher Secondary, Science",
+      period: "Jun 2022",
+      grade: "82%",
+      gradient: "from-blue-500 to-purple-600",
       status : "Completed"
     },
     {

@@ -8,9 +8,9 @@ const HeroSection = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       window.scrollTo({ top: 200, behavior: "smooth" });
-    }, 2000); // delay in milliseconds
+    }, 2000);
 
-    return () => clearTimeout(timer); // cleanup on unmount
+    return () => clearTimeout(timer);
   }, []);
   return (
     <section className="px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 text-center relative z-10 scroll-smooth">
@@ -46,13 +46,33 @@ const HeroSection = () => {
         </div>
         
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center animate-fade-in delay-400">
-          <a href="#projects"><Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-6 sm:px-8 py-3 text-base font-medium w-full sm:w-auto transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-blue-500/25">
-            View My Work
-          </Button></a>
-          <a href="https://drive.google.com/file/d/1F0DTISZlIZiBmqxaN-dgqkFizz_g0wXG/view?usp=sharing" target="_blank"><Button variant="outline" className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:border-slate-500 px-6 sm:px-8 py-3 text-base font-medium w-full sm:w-auto transform hover:scale-105 transition-all duration-300 backdrop-blur-sm">
-            Download CV
-          </Button></a>
-        </div>
+
+  {/* Primary CTA */}
+  <a href="#projects">
+    <Button className="relative overflow-hidden bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 text-white px-6 sm:px-8 py-3 text-base font-medium w-full sm:w-auto rounded-xl shadow-lg shadow-purple-500/20 hover:shadow-purple-500/40 transform hover:scale-105 transition-all duration-300">
+      
+      {/* Glow layer */}
+      <span className="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-indigo-400 opacity-0 hover:opacity-20 transition duration-300 blur-xl"></span>
+      
+      <span className="relative z-10">View My Work</span>
+    </Button>
+  </a>
+
+  {/* Secondary CTA */}
+  <a 
+    href="https://drive.google.com/file/d/1rSX1Tx8TSSSSnSwIp-KlOGJiFVz-BAy9/view?usp=sharing" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Button 
+      variant="outline" 
+      className="px-6 sm:px-8 py-3 text-base font-medium w-full sm:w-auto rounded-xl border border-slate-600/60 text-slate-300 bg-slate-900/40 backdrop-blur-md hover:bg-slate-800/60 hover:border-purple-400/40 hover:text-white transform hover:scale-105 transition-all duration-300"
+    >
+      Download CV
+    </Button>
+  </a>
+
+</div>
       </div>
     </section>
   );
