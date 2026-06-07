@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import video from "../../Assests/Animation.mp4";
 
-
 const LoadingAnimation = () => {
   const navigate = useNavigate();
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -30,11 +29,11 @@ const LoadingAnimation = () => {
             className="w-full h-full object-cover"></video>
             {/* Final text */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center animate-fade-in" style={{ animationDelay: "19s" }}>
+              <div className="text-center animate-fade-in" style={{ animationDelay: "20s" }}>
                 <h1 className="text-6xl font-bold text-white mb-4 animate-pulse">
                   Welcome
                 </h1>
-                <p className="text-2xl text-gray-300 animate-fade-in" style={{ animationDelay: "20s" }}>
+                <p className="text-2xl text-gray-300 animate-fade-in" style={{ animationDelay: "21s" }}>
                   From Kolkata to the Universe
                 </p>
               </div>

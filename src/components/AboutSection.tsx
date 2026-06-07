@@ -38,7 +38,7 @@ const AboutSection = () => {
               </Badge>
               <Badge className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 border-purple-500/30 text-purple-300 hover:bg-gradient-to-r hover:from-purple-600/30 hover:to-pink-600/30 transition-all duration-300 hover:scale-110 px-4 py-2 text-sm font-medium">
                 <Briefcase className="w-4 h-4 mr-2" />
-                1+ Years Experience
+                Fresher
               </Badge>
             </div>
           </div>
@@ -64,13 +64,13 @@ const AboutSection = () => {
                 icon: Code,
                 gradient: "from-purple-500 to-violet-500"
               },
-              { 
-                label: "Open to Work", 
-                value: "Yes", 
-                icon: CheckCircle,
-                gradient: "from-emerald-500 to-green-500",
-                highlight: true 
-              }
+              // { 
+              //   label: "Open to Work", 
+              //   value: "", 
+              //   icon: CheckCircle,
+              //   gradient: "from-emerald-500 to-green-500",
+              //   highlight: true 
+              // }
             ].map((item, index) => {
               const IconComponent = item.icon;
               return (
@@ -94,10 +94,9 @@ const AboutSection = () => {
                         {item.label}
                       </span>
                     </div>
-                    <span className={`text-sm sm:text-base font-semibold ${
-                      item.highlight 
-                        ? 'text-emerald-300 group-hover:text-emerald-200' 
-                        : 'text-white group-hover:text-slate-100'
+                    <span className={`text-sm sm:text-base font-semibold 
+                    ${ 
+                        'text-emerald-300 group-hover:text-emerald-200' 
                     } transition-colors duration-300`}>
                       {item.value}
                     </span>

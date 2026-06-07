@@ -10,7 +10,16 @@ const ExperienceSection = () => {
       type: "Internship",
       location: "India",
       skills: ["RAG", "NLP", "JWT Authentication", "RBAC", "FlashRank", "Python"],
-      description: "Developed a secure RAG-based chatbot indexing 6,000+ legal documents, improving top-3 retrieval precision by 25% using FlashRank re-ranking. Implemented JWT authentication and RBAC for role-based access control and enhanced accuracy using a Generative Self-Correction loop."
+      description: "Developed a secure RAG-based chatbot indexing 6,000+ legal documents, improving top-3 retrieval precision by 25% using FlashRank re-ranking. Implemented JWT authentication and RBAC for role-based access control and enhanced accuracy using a Generative Self-Correction loop"
+    },
+    {
+      title: "Software Developer Intern",
+      company: "ARC Document Solutions India Private Ltd.",
+      period: "Apr 2026 – Present",
+      type: "Internship",
+      location: "India",
+      skills: ["Python", "React", "Pyside6", "SQL"],
+      description: "Develop, maintain, and optimize core company products utilizing Python and JavaScript to deliver scalable software solutions"
     }
   ];
 

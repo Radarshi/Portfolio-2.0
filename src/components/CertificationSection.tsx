@@ -28,7 +28,7 @@ const CertificationSection = () => {
       date: "2024",
       status: "Completed",
       skills: ["Hackathon", "Machine Learning", "Data Structures"],
-      gradient: "from-purple-500 to-violet-600",
+      gradient: "from-purple-500 to-violet-800",
       credentialUrl: "https://drive.google.com/file/d/1Iv4H0n66SpvY0kJR3rMY7FFX1aDww36c/view?usp=sharing"
     },
     {

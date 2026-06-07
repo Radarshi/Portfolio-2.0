@@ -5,32 +5,196 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      name: "Mojo-The 30 Second music player",
-      description: "Full-stack application integrating NoCodeAPI for data integration with seamless music streaming capabilities and modern UI design.",
-      tech: ["React", "Node.js", "Tailwind CSS", "API Integration"],
+      slug: "real-time-music-player-react-nodejs",
+      
+      title: "Real-Time Music Player Web App using React & Node.js | Mojo",
+      
+      shortTitle: "Mojo Music Player",
+
+      description: "Mojo is a real-time music streaming web application built using React and Node.js, enabling users to play music instantly with a modern UI and seamless API integration.",
+
+      longDescription: `
+    Mojo is a full-stack music streaming application designed for fast and seamless playback. 
+    The platform integrates external APIs using NoCodeAPI to fetch and stream music efficiently.
+
+    Key highlights include:
+    - Instant music playback with minimal latency
+    - Responsive UI built with Tailwind CSS
+    - Scalable backend using Node.js
+    - API-driven architecture for dynamic content
+
+    This project demonstrates real-time data handling, API integration, and performance-focused frontend design.
+      `,
+
+      keywords: [
+        "music player web app",
+        "react music player project",
+        "node.js streaming app",
+        "real-time music app",
+        "full stack music player",
+        "web audio application"
+      ],
+
+      techStack: [
+        "React.js",
+        "Node.js",
+        "Tailwind CSS",
+        "NoCodeAPI",
+        "REST APIs"
+      ],
+
+      category: "Full Stack Web Application",
+
+      features: [
+        "Real-time music playback",
+        "API-based music streaming",
+        "Responsive modern UI",
+        "Fast loading and optimized performance"
+      ],
+
+      useCase: "Demonstrates building a scalable real-time music streaming platform using modern web technologies.",
+
+      challenges: [
+        "Handling real-time playback synchronization",
+        "Integrating third-party APIs efficiently",
+        "Optimizing frontend performance"
+      ],
+
       gradient: "from-blue-500 to-purple-600",
+
       status: "Featured",
-      github : "https://github.com/Radarshi/MoJo",
-      preview : "https://mo-jo-my-music-app.vercel.app/"
+
+      github: "https://github.com/Radarshi/MoJo",
+
+      liveDemo: "https://mo-jo-my-music-app.vercel.app/"
     },
     {
-    name: "MediPlus: Medical E-commerce",
-    description: "Designed and implemented a scalable full-stack medical e-commerce platform with secure RESTful APIs for managing users, consultations, and pharmacy inventory.",
-    tech: ["React (TypeScript, JavaScript)", "Node.js", "Express", "PostgreSQL", "Tailwind CSS"],
-    gradient: "from-green-500 to-teal-600",
-    status: "E-Commerce platform",
-    github : "https://github.com/Radarshi/MediPlus-Frontend",
-    preview : "https://medi-plus-ten.vercel.app/"
-  },
-  {
-    name: "Federated Learning - Privacy-Preserving Legal Document Classification",
-    description: "Built a federated learning framework enabling institutions to collaboratively train models without sharing sensitive data, improving classification robustness and achieving 88% accuracy.",
-    tech: ["Python", "PyTorch", "Scikit-learn", "NLP", "Federated Learning"],
-    gradient: "from-orange-500 to-red-600",
-    status: "Research Project",
-    github : "",
-    preview : ""
-  }
+      slug: "medical-ecommerce-platform-react-nodejs-postgresql",
+
+      title: "Medical E-Commerce Platform with Secure APIs | MediPlus",
+
+      shortTitle: "MediPlus",
+
+      description: "MediPlus is a full-stack medical e-commerce platform built using React and Node.js, enabling users to purchase medicines, book consultations, and manage pharmacy inventory securely.",
+
+      longDescription: `
+    MediPlus is a scalable healthcare-focused e-commerce platform designed to streamline online medicine purchases and consultations.
+
+    The system includes:
+    - Secure RESTful APIs for managing users and transactions
+    - Pharmacy inventory management system
+    - Consultation booking features
+    - Optimized database design using PostgreSQL
+
+    This project demonstrates backend architecture, API security, and full-stack system design in a real-world healthcare domain.
+      `,
+
+      keywords: [
+        "medical ecommerce platform",
+        "healthcare web app react node",
+        "pharmacy management system",
+        "full stack ecommerce project",
+        "secure rest api nodejs",
+        "postgresql ecommerce backend"
+      ],
+
+      techStack: [
+        "React.js",
+        "TypeScript",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Tailwind CSS"
+      ],
+
+      category: "Full Stack Web Application",
+
+      features: [
+        "Online medicine ordering system",
+        "Secure REST API for user & order management",
+        "Pharmacy inventory management",
+        "Consultation booking system"
+      ],
+
+      useCase: "Demonstrates building a scalable healthcare e-commerce platform with secure backend APIs and structured database design.",
+
+      challenges: [
+        "Designing secure API endpoints for sensitive healthcare data",
+        "Managing relational data efficiently with PostgreSQL",
+        "Handling multiple modules (orders, users, consultations)"
+      ],
+
+      gradient: "from-green-500 to-teal-600",
+
+      status: "Production-Grade Project",
+
+      github: "https://github.com/Radarshi/MediPlus-Frontend",
+
+      liveDemo: "https://medi-plus-ten.vercel.app/"
+    },
+    {
+      slug: "federated-learning-legal-document-classification",
+
+      title: "Federated Learning for Privacy-Preserving Legal Document Classification",
+
+      shortTitle: "Federated Learning NLP",
+
+      description: "A federated learning-based NLP system for legal document classification that enables collaborative model training without sharing sensitive data, achieving 88% accuracy.",
+
+      longDescription: `
+    This project implements a federated learning framework for legal document classification, ensuring data privacy across institutions.
+
+    Key aspects:
+    - Distributed model training without sharing raw data
+    - NLP-based classification of legal documents
+    - Improved robustness through collaborative learning
+    - Achieved ~88% classification accuracy
+
+    This project highlights expertise in machine learning, privacy-preserving systems, and NLP model development.
+      `,
+
+      keywords: [
+        "federated learning project",
+        "privacy preserving machine learning",
+        "legal document classification NLP",
+        "pytorch NLP project",
+        "distributed machine learning system",
+        "machine learning research project"
+      ],
+
+      techStack: [
+        "Python",
+        "PyTorch",
+        "Scikit-learn",
+        "Natural Language Processing",
+        "Federated Learning"
+      ],
+
+      category: "Machine Learning / Research",
+
+      features: [
+        "Privacy-preserving distributed training",
+        "NLP-based document classification",
+        "Multi-node collaborative learning",
+        "88% classification accuracy"
+      ],
+
+      useCase: "Demonstrates building secure and distributed machine learning systems for sensitive data environments.",
+
+      challenges: [
+        "Synchronizing model updates across nodes",
+        "Maintaining accuracy without centralized data",
+        "Handling NLP preprocessing for legal datasets"
+      ],
+
+      gradient: "from-orange-500 to-red-600",
+
+      status: "Research Project",
+
+      github: "",
+
+      liveDemo: ""
+    }
   ];
 
   return (
@@ -71,71 +235,86 @@ const ProjectsSection = () => {
               
               {/* Status Badge */}
               <div className="absolute top-4 right-4 z-20">
-                <Badge className={`bg-gradient-to-r ${project.gradient} text-white border-0 text-xs font-medium px-3 py-1 shadow-lg`}>
+                <Badge className={`bg-gradient-to-r ${project.gradient} text-white border-0 text-xs font-medium px-2.5 py-1 shadow-lg`}>
                   {project.status}
                 </Badge>
               </div>
 
-              <CardContent className="p-6 sm:p-8 h-full flex flex-col justify-between relative z-10">
-  
-  {/* Top Section */}
-  <div>
-    {/* Project Header */}
-    <div className="mb-5">
-      <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 group-hover:bg-clip-text transition-all duration-300">
-        {project.name}
-      </h3>
-      <div className={`w-10 h-[3px] bg-gradient-to-r ${project.gradient} group-hover:w-20 transition-all duration-500 rounded-full`} />
-    </div>
+             <CardContent className="p-6 sm:p-8 h-full flex flex-col justify-between relative z-10">
 
-    {/* Project Description */}
-    <p className="text-slate-300 text-sm sm:text-[15px] leading-relaxed mb-5 line-clamp-3 group-hover:text-slate-200 transition-colors duration-300">
-      {project.description}
-    </p>
+        {/* Top Section */}
+        <div>
+          {/* Project Header */}
+          <div className="mb-5">
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-2 py-3 leading-tight group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-blue-400 group-hover:bg-clip-text transition-all duration-300">
+              {project.title}
+            </h3>
 
-    {/* Tech Stack */}
-    <div className="flex flex-wrap gap-2 mb-4">
-      {project.tech.map((tech, techIndex) => (
-        <Badge
-          key={techIndex}
-          variant="outline"
-          className="border-slate-600/40 bg-slate-800/40 text-slate-300 text-[11px] px-2.5 py-1 rounded-md hover:border-slate-500 hover:bg-slate-700/60 hover:text-white transition-all duration-300"
-          style={{
-            animationDelay: `${(index * 200) + (techIndex * 100)}ms`,
-            animationFillMode: 'both'
-          }}
-        >
-          {tech}
-        </Badge>
-      ))}
-    </div>
-  </div>
+            {/* Category */}
+            <p className="text-xs text-purple-400 font-medium uppercase tracking-wide mb-2">
+              {project.category}
+            </p>
+            <div className={`w-10 h-[3px] bg-gradient-to-r ${project.gradient} group-hover:w-20 transition-all duration-500 rounded-full`} />
+          </div>
 
-  {/* Bottom Section (Buttons always aligned) */}
-  <div className="flex gap-3 pt-4 mt-4 border-t border-slate-700/50">
-    
-    {project.github && (
-      <a href={project.github} target="_blank" rel="noopener noreferrer">
-        <button className="flex items-center gap-2 px-4 py-2 bg-slate-800/60 hover:bg-slate-700/80 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-105 text-sm font-medium border border-slate-600/30 hover:border-slate-500/50">
-          <Github className="w-4 h-4" />
-          <span>Code</span>
-        </button>
-      </a>
-    )}
+          {/* Description */}
+          <p className="text-slate-300 text-sm sm:text-[15px] leading-relaxed mb-4 line-clamp-3 group-hover:text-slate-200 transition-colors duration-300">
+            {project.description}
+          </p>
 
-    {project.preview && (
-      <a href={project.preview} target="_blank" rel="noopener noreferrer">
-        <button className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.gradient} text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm font-medium opacity-90 hover:opacity-100`}>
-          <ExternalLink className="w-4 h-4" />
-          <span>Preview</span>
-        </button>
-      </a>
-    )}
+          {/* Use Case (NEW - recruiter focused) */}
+          {project.useCase && (
+            <p className="text-slate-400 text-xs sm:text-sm mb-4 italic">
+              {project.useCase}
+            </p>
+          )}
 
-  </div>
+          {/* Features (NEW - high impact) */}
+          {project.features && (
+            <ul className="text-slate-400 text-xs sm:text-sm mb-4 space-y-1 list-disc list-inside">
+              {project.features.slice(0, 2).map((feature, i) => (
+                <li key={i}>{feature}</li>
+              ))}
+            </ul>
+          )}
 
-</CardContent>
+          {/* Tech Stack */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            {project.techStack.map((tech, techIndex) => (
+              <Badge
+                key={techIndex}
+                variant="outline"
+                className="border-slate-600/40 bg-slate-800/40 text-slate-300 text-[11px] px-2.5 py-1 rounded-md hover:border-slate-500 hover:bg-slate-700/60 hover:text-white transition-all duration-300"
+              >
+                {tech}
+              </Badge>
+            ))}
+          </div>
+        </div>
 
+        {/* Bottom Section */}
+        <div className="flex gap-3 pt-4 mt-4 border-t border-slate-700/50">
+
+          {project.github && (
+            <a href={project.github} target="_blank" rel="noopener noreferrer">
+              <button className="flex items-center gap-2 px-4 py-2 bg-slate-800/60 hover:bg-slate-700/80 text-slate-300 hover:text-white rounded-lg transition-all duration-300 hover:scale-105 text-sm font-medium border border-slate-600/30 hover:border-slate-500/50">
+                <Github className="w-4 h-4" />
+                <span>Code</span>
+              </button>
+            </a>
+          )}
+
+          {project.liveDemo && (
+            <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
+              <button className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.gradient} text-white rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg text-sm font-medium opacity-90 hover:opacity-100`}>
+                <ExternalLink className="w-4 h-4" />
+                <span>Live Demo</span>
+              </button>
+            </a>
+          )}
+
+        </div>
+    </CardContent>
               {/* Hover Glow Effect */}
               <div className={`absolute inset-0 rounded-lg bg-gradient-to-r ${project.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-500 pointer-events-none`}></div>
             </Card>
