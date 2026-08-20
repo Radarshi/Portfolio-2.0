@@ -147,7 +147,7 @@ const CertificationSection = () => {
                 </div>
 
                 {/* Achievement Progress Bar */}
-                <div className="mt-4 pt-4 border-t border-slate-700/50">
+                {/* <div className="mt-4 pt-4 border-t border-slate-700/50">
                   <div className="flex items-center justify-between text-xs text-slate-400 mb-2">
                     <span>Credential Status</span>
                     <span className="text-emerald-300 font-medium">{cert.status}</span>
@@ -158,7 +158,7 @@ const CertificationSection = () => {
                       style={{ width: cert.status === "Verified" ? "100%" : "85%" }}
                     ></div>
                   </div>
-                </div>
+                </div> */}
               </CardContent>
 
               {/* Hover Glow Effect */}

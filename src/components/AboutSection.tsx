@@ -54,7 +54,7 @@ const AboutSection = () => {
               },
               { 
                 label: "Experience", 
-                value: "1+ Years", 
+                value: "Fresher", 
                 icon: Calendar,
                 gradient: "from-blue-500 to-cyan-500"
               },

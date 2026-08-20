@@ -15,7 +15,7 @@ const ExperienceSection = () => {
     {
       title: "Software Developer Intern",
       company: "ARC Document Solutions India Private Ltd.",
-      period: "Apr 2026 – Present",
+      period: "Apr 2026 – Aug 2026",
       type: "Internship",
       location: "India",
       skills: ["Python", "React", "Pyside6", "SQL"],

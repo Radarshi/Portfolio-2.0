@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Code, Database, Server } from "lucide-react";
+import { Code, Database, Server, Microscope } from "lucide-react";
 import { useEffect } from "react";
 import logo from "../../Assests/Dp.jpg";
 
@@ -37,6 +37,7 @@ const HeroSection = () => {
             { icon: Code, label: "Frontend", color: "blue" },
             { icon: Server, label: "Backend", color: "green" },
             { icon: Database, label: "Database", color: "purple" },
+            {icon: Microscope, label: "Research", color: ""}
           ].map((item, index) => (
             <div key={index} className={`flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-slate-900/40 border border-slate-700/50 text-slate-300 hover:scale-105 transition-all duration-300 backdrop-blur-sm hover:bg-slate-900/60`}>
               <item.icon className="w-4 h-4" />
@@ -60,7 +61,7 @@ const HeroSection = () => {
 
         {/* Secondary CTA */}
         <a 
-          href="https://drive.google.com/file/d/1rSX1Tx8TSSSSnSwIp-KlOGJiFVz-BAy9/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1ax9eObPP237QEz2iHDHMAX0fbFG9dWR-/view?usp=sharing" 
           target="_blank" 
           rel="noopener noreferrer"
         >

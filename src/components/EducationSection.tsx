@@ -10,7 +10,6 @@ const EducationSection = () => {
       period: "May 2020",
       grade: "80%",
       gradient: "from-purple-500 to-pink-600",
-      status : "Completed"
     },
     {
       school: "North Point Senior Secondary Boarding School",
@@ -18,15 +17,13 @@ const EducationSection = () => {
       period: "Jun 2022",
       grade: "82%",
       gradient: "from-blue-500 to-purple-600",
-      status : "Completed"
     },
     {
       school: "Techno India University",
       degree: "B.Tech in Computer Science & Engineering",
       period: "Sep 2022 - Jul 2026",
-      grade: "8.14",
-      gradient: "from-blue-800 to-purple-600",
-      status : "Pursuing"
+      grade: "8.25",
+      gradient: "from-red-800 to-orange-600",
     }
   ];
 
@@ -100,11 +97,6 @@ const EducationSection = () => {
                       Grade: {edu.grade}
                     </Badge>
                     
-                    {/* Achievement Indicator */}
-                    <div className="flex items-center gap-2 text-emerald-300 text-sm">
-                      <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                      <span className="font-medium">{edu.status}</span>
-                    </div>
                   </div>
                 </div>
 
