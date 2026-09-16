@@ -142,15 +142,15 @@ const ProjectsSection = () => {
       description: "A federated learning-based NLP system for legal document classification that enables collaborative model training without sharing sensitive data, achieving 88% accuracy.",
 
       longDescription: `
-    This project implements a federated learning framework for legal document classification, ensuring data privacy across institutions.
+        This project implements a federated learning framework for legal document classification, ensuring data privacy across institutions.
 
-    Key aspects:
-    - Distributed model training without sharing raw data
-    - NLP-based classification of legal documents
-    - Improved robustness through collaborative learning
-    - Achieved ~88% classification accuracy
+        Key aspects:
+        - Distributed model training without sharing raw data
+        - NLP-based classification of legal documents
+        - Improved robustness through collaborative learning
+        - Achieved ~88% classification accuracy
 
-    This project highlights expertise in machine learning, privacy-preserving systems, and NLP model development.
+        This project highlights expertise in machine learning, privacy-preserving systems, and NLP model development.
       `,
 
       keywords: [

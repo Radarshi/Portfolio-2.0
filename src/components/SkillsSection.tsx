@@ -61,8 +61,7 @@ const SkillsSection = () => {
             <Card 
               key={index} 
               className="group bg-slate-900/30 border-slate-700/30 hover:bg-slate-800/50 transition-all duration-500 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/20 backdrop-blur-md animate-fade-in hover:border-slate-500/50 relative overflow-hidden" 
-              style={{ animationDelay: `${index * 150}ms` }}
-            >
+              style={{ animationDelay: `${index * 150}ms` }}>
               {/* Gradient Border Effect */}
               <div className={`absolute inset-0 bg-gradient-to-r ${category.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-lg`}></div>
               
@@ -86,8 +85,7 @@ const SkillsSection = () => {
                       style={{ 
                         animationDelay: `${(index * 150) + (skillIndex * 50)}ms`,
                         animationFillMode: 'both'
-                      }}
-                    >
+                      }}>
                       {skill}
                     </Badge>
                   ))}

@@ -72,12 +72,14 @@ const BlogSection = () => {
     <section className="py-16 sm:py-20 px-6 sm:px-10">
       
       {/* Section Header */}
-      <div className="max-w-6xl mx-auto mb-10">
-        <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-3">
-          Insights & Articles
+      <div className="max-w-6xl mx-auto mb-10 text-center">
+        <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
+          <span className="bg-gradient-to-r from-amber-400 via-orange-400 to-emerald-400 bg-clip-text text-transparent">
+              Insights & Articles
+            </span>
         </h2>
 
-        <p className="text-slate-400 text-sm sm:text-base max-w-2xl">
+        <p className="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
           I write about system design, web development, and building scalable
           applications.
         </p>
@@ -101,8 +103,7 @@ const BlogSection = () => {
                   key={i}
                   className="text-[10px] px-2 py-1 rounded-md 
                   bg-purple-500/10 text-purple-400 
-                  border border-purple-500/20"
-                >
+                  border border-purple-500/20">
                   {tag}
                 </span>
               ))}
@@ -132,38 +133,34 @@ const BlogSection = () => {
       </div>
 
       {/* CTA */}
-      <div className="max-w-6xl mx-auto mt-10 text-center">
+      {/* <div className="max-w-6xl mx-auto mt-10 text-center">
       <button
         onClick={() => setShowComingSoon(true)}
         className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg 
         bg-gradient-to-r from-purple-500 to-blue-500 
         text-white text-sm font-medium hover:scale-105 
-        transition-all duration-300"
-      >
+        transition-all duration-300">
         View All Articles →
       </button>
-      </div>
+      </div> */}
 
       {/* Modal */}
       {selectedPost && (
         <div
           className="fixed inset-0 z-50 flex items-center justify-center 
           bg-black/70 backdrop-blur-sm px-4"
-          onClick={() => setSelectedPost(null)}
-        >
+          onClick={() => setSelectedPost(null)}>
           <div
             className="relative w-full max-w-3xl max-h-[85vh] overflow-y-auto 
             rounded-2xl border border-slate-700/50 
             bg-slate-950 p-6 sm:p-8 shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
+            onClick={(e) => e.stopPropagation()}>
             {/* Close Button */}
             <button
               onClick={() => setSelectedPost(null)}
               className="absolute top-4 right-4 w-9 h-9 rounded-full 
               bg-slate-800 text-slate-300 hover:text-white 
-              hover:bg-slate-700 transition"
-            >
+              hover:bg-slate-700 transition">
               ✕
             </button>
 
@@ -174,8 +171,7 @@ const BlogSection = () => {
                   key={index}
                   className="text-xs px-3 py-1 rounded-md 
                   bg-purple-500/10 text-purple-400 
-                  border border-purple-500/20"
-                >
+                  border border-purple-500/20">
                   {tag}
                 </span>
               ))}
@@ -238,7 +234,6 @@ const BlogSection = () => {
                 <h3 className="text-xl font-semibold text-white">
                   Conclusion
                 </h3>
-
                 <p>{selectedPost.content.conclusion}</p>
               </>
             )}
@@ -249,8 +244,7 @@ const BlogSection = () => {
               <button
                 onClick={() => setSelectedPost(null)}
                 className="px-5 py-2.5 rounded-lg bg-slate-800 
-                text-white hover:bg-slate-700 transition"
-              >
+                text-white hover:bg-slate-700 transition">
                 Close
               </button>
             </div>
@@ -262,21 +256,18 @@ const BlogSection = () => {
         <div
           className="fixed inset-0 z-50 flex items-center justify-center 
           bg-black/70 backdrop-blur-sm px-4"
-          onClick={() => setShowComingSoon(false)}
-        >
+          onClick={() => setShowComingSoon(false)}>
           <div
             className="relative w-full max-w-md rounded-2xl 
             border border-slate-700/50 bg-slate-950 
             p-8 text-center shadow-2xl"
-            onClick={(e) => e.stopPropagation()}
-          >
+            onClick={(e) => e.stopPropagation()}>
             {/* Close */}
             <button
               onClick={() => setShowComingSoon(false)}
               className="absolute top-4 right-4 w-8 h-8 rounded-full 
               bg-slate-800 text-slate-400 hover:text-white 
-              hover:bg-slate-700 transition"
-            >
+              hover:bg-slate-700 transition">
               ✕
             </button>
 
@@ -308,15 +299,12 @@ const BlogSection = () => {
               className="px-5 py-2.5 rounded-lg 
               bg-gradient-to-r from-purple-500 to-blue-500 
               text-white text-sm font-medium 
-              hover:scale-105 transition-all duration-300"
-            >
+              hover:scale-105 transition-all duration-300">
               Got it
             </button>
           </div>
-        </div>
-)}
+        </div>)}
     </section>
-    
     
   );
 };

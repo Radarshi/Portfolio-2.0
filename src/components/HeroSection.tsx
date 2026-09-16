@@ -61,14 +61,12 @@ const HeroSection = () => {
 
         {/* Secondary CTA */}
         <a 
-          href="https://drive.google.com/file/d/1ax9eObPP237QEz2iHDHMAX0fbFG9dWR-/view?usp=sharing" 
+          href="https://drive.google.com/file/d/1FXCVQ81GoEk2iLsESzDnUqblJBRJaGBD/view?usp=drive_link" 
           target="_blank" 
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           <Button 
             variant="outline" 
-            className="px-6 sm:px-8 py-3 text-base font-medium w-full sm:w-auto rounded-xl border border-slate-600/60 text-slate-300 bg-slate-900/40 backdrop-blur-md hover:bg-slate-800/60 hover:border-purple-400/40 hover:text-white transform hover:scale-105 transition-all duration-300"
-          >
+            className="px-6 sm:px-8 py-3 text-base font-medium w-full sm:w-auto rounded-xl border border-slate-600/60 text-slate-300 bg-slate-900/40 backdrop-blur-md hover:bg-slate-800/60 hover:border-purple-400/40 hover:text-white transform hover:scale-105 transition-all duration-300">
             Download CV
           </Button>
         </a>

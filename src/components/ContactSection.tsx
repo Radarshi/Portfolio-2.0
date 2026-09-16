@@ -1,6 +1,4 @@
 import { ExternalLink, Github, Linkedin, Mail, MessageCircle, Send } from "lucide-react";
-import { useState } from "react";
-
 
 const ContactSection = () => {
   const contactMethods = [
